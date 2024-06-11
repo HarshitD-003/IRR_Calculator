@@ -9,13 +9,13 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import axios from 'axios';
 
 const Irr3 = () => {
-  const [ebwTokenAmount, setEbwTokenAmount] = useState('');
-  const [bookingAmount, setBookingAmount] = useState('');
+  const [ebwTokenAmount, setEbwTokenAmount] = useState('0');
+  const [bookingAmount, setBookingAmount] = useState('0');
   const [startDate1, setStartDate1] = useState(new Date());
   const [startDate2, setStartDate2] = useState(new Date());
-  const [totalAmount, setTotalAmount] = useState('');
-  const [intrestRate, setIntrestRate] = useState('');
-  const [emi, setEmi] = useState('');
+  const [totalAmount, setTotalAmount] = useState('0');
+  const [intrestRate, setIntrestRate] = useState('0');
+  const [emi, setEmi] = useState('0');
   const [rent, setRent] = useState('');
   const [radioValue, setRadioValue] = useState('');
   const [ModalText, setModalText] = useState('');
