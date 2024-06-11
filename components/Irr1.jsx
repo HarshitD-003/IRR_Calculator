@@ -65,7 +65,7 @@ function Irr1() {
         console.log(cashflows);
         console.log(dates);
 
-        const response = await axios.post('https://irr-seven.vercel.app/calculate_xirr', {
+        const response = await axios.post('https://irr-seven.vercel.app/api/calculate_xirr', {
             cashflows,
             dates,
         },{
