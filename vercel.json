@@ -6,29 +6,29 @@
       "use": "@vercel/node"
     },
     {
-      "src": "src/index.jsx",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "src": "vite.config.js",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/calculate_xirr",
-      "dest": "/server.js"
+      "dest": "/calculate_xirr"
     },
     {
       "src": "/calculate_irr",
-      "dest": "/server.js"
+      "dest": "/calculate_irr"
     },
     {
       "src": "/uc_calculate_irr",
-      "dest": "/server.js"
+      "dest": "/uc_calculate_irr"
     },
     {
-      "src": "/(.*)",
-      "dest": "/src/index.jsx"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
     }
   ]
 }
