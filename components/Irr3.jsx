@@ -169,7 +169,7 @@ const Irr3 = () => {
     };
     try {
       console.log(formData);
-      const response = await axios.post('http://localhost:3000/uc_calculate_irr', formData, {
+      const response = await axios.post('https://irr-seven.vercel.app/uc_calculate_irr', formData, {
 
         headers: {
           'Content-Type': 'application/json',
