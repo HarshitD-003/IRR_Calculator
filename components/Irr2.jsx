@@ -48,7 +48,7 @@ function Irr2() {
     };
 
       try {
-        const response = await axios.post('https://irr-seven.vercel.app/calculate_irr', formData, {
+        const response = await axios.post('https://irr-seven.vercel.app/api/calculate_irr', formData, {
           headers: {
             'Content-Type': 'application/json',
           },
