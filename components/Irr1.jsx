@@ -71,7 +71,7 @@ function Irr1() {
         },{
           headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': 'https://xirr-calculator.vercel.app',
+                    'Access-Control-Allow-Origin': 'https://irr-seven.vercel.app',
                 }
          });
 
