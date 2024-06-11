@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/calculate_xirr",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/calculate_irr",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/uc_calculate_irr",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ]
+}
